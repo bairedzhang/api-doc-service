@@ -1,0 +1,421 @@
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luMvlfp2sOgDz_Vc4ezi5Vf4',
+  CreateTime: '1428211342',
+  MsgType: 'text',
+  Content: 'login',
+  MsgId: '6134121005873089480' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luMvlfp2sOgDz_Vc4ezi5Vf4',
+  CreateTime: '1428211865',
+  MsgType: 'text',
+  Content: 'login',
+  MsgId: '6134123252140985493' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luCTtbzWcZdtNceQO_W8WYlY',
+  CreateTime: '1428411937',
+  MsgType: 'event',
+  Event: 'subscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luCTtbzWcZdtNceQO_W8WYlY',
+  CreateTime: '1428411946',
+  MsgType: 'location',
+  Location_X: '34.671322',
+  Location_Y: '112.442955',
+  Scale: '15',
+  Label: '河南省洛阳市西工区中州中路与人民西路交叉口',
+  MsgId: '6134982593492606605' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luCTtbzWcZdtNceQO_W8WYlY',
+  CreateTime: '1428468932',
+  MsgType: 'event',
+  Event: 'unsubscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luMuidwNN1N7Ny5tviJ2GRok',
+  CreateTime: '1428656673',
+  MsgType: 'event',
+  Event: 'subscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luDd6heWXJAVrhoxJknhCRtY',
+  CreateTime: '1428915517',
+  MsgType: 'event',
+  Event: 'subscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luGCLc7OBBVPYBkvBuT5BgXc',
+  CreateTime: '1429501560',
+  MsgType: 'event',
+  Event: 'subscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luGCLc7OBBVPYBkvBuT5BgXc',
+  CreateTime: '1429501578',
+  MsgType: 'text',
+  Content: '？',
+  MsgId: '6139662527297678106' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luGCLc7OBBVPYBkvBuT5BgXc',
+  CreateTime: '1429502944',
+  MsgType: 'text',
+  Content: '什么时候上线！',
+  MsgId: '6139668394223005146' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luCdC4gbS2FNmQRDnMC5oVrs',
+  CreateTime: '1429517293',
+  MsgType: 'event',
+  Event: 'subscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luGCLc7OBBVPYBkvBuT5BgXc',
+  CreateTime: '1429519053',
+  MsgType: 'text',
+  Content: '什么态度',
+  MsgId: '6139737581851185331' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luGcLVw09SCEvTrmINTCruHw',
+  CreateTime: '1429709522',
+  MsgType: 'event',
+  Event: 'subscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luPNa-_LvzFBVMyBw1P6Z3zA',
+  CreateTime: '1429776160',
+  MsgType: 'event',
+  Event: 'subscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luPNa-_LvzFBVMyBw1P6Z3zA',
+  CreateTime: '1429776177',
+  MsgType: 'text',
+  Content: '想送',
+  MsgId: '6140841921022301325' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luPNa-_LvzFBVMyBw1P6Z3zA',
+  CreateTime: '1429776196',
+  MsgType: 'event',
+  Event: 'unsubscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luKxJeMATG9AWm802eFxTihk',
+  CreateTime: '1429888689',
+  MsgType: 'text',
+  Content: '/:v/:v/:v',
+  MsgId: '6141325156382758355' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luKxJeMATG9AWm802eFxTihk',
+  CreateTime: '1429888689',
+  MsgType: 'text',
+  Content: '/:v/:v/:v',
+  MsgId: '6141325156382758355' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luGCLc7OBBVPYBkvBuT5BgXc',
+  CreateTime: '1429975420',
+  MsgType: 'text',
+  Content: '超老板，注册个随时随递的订阅号，我找人维护',
+  MsgId: '6141697663191335724' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luB3diYkkTViTRH-eAUdnOuU',
+  CreateTime: '1430056925',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.873734',
+  Longitude: '116.343109',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luB3diYkkTViTRH-eAUdnOuU',
+  CreateTime: '1430060922',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.897469',
+  Longitude: '116.496628',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luKxJeMATG9AWm802eFxTihk',
+  CreateTime: '1430064911',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.868935',
+  Longitude: '116.408348',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luKxJeMATG9AWm802eFxTihk',
+  CreateTime: '1430064917',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.868797',
+  Longitude: '116.408394',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luKxJeMATG9AWm802eFxTihk',
+  CreateTime: '1430064927',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.868889',
+  Longitude: '116.408318',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luKxJeMATG9AWm802eFxTihk',
+  CreateTime: '1430064942',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.868595',
+  Longitude: '116.408409',
+  Precision: '30.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luKxJeMATG9AWm802eFxTihk',
+  CreateTime: '1430067301',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.869007',
+  Longitude: '116.408257',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luADi-vT4lyMSM7Td2x1jfJY',
+  CreateTime: '1430072269',
+  MsgType: 'event',
+  Event: 'subscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luADi-vT4lyMSM7Td2x1jfJY',
+  CreateTime: '1430081276',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.932182',
+  Longitude: '116.310570',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luKxJeMATG9AWm802eFxTihk',
+  CreateTime: '1430098257',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.868786',
+  Longitude: '116.408516',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luKxJeMATG9AWm802eFxTihk',
+  CreateTime: '1430115169',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.931953',
+  Longitude: '116.321213',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luKxJeMATG9AWm802eFxTihk',
+  CreateTime: '1430146145',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.868656',
+  Longitude: '116.407646',
+  Precision: '10.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luL5NxBmZ8Zi5zvPtU1847A8',
+  CreateTime: '1430199452',
+  MsgType: 'event',
+  Event: 'subscribe',
+  EventKey: '' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luL5NxBmZ8Zi5zvPtU1847A8',
+  CreateTime: '1430199470',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.846413',
+  Longitude: '116.360764',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luL5NxBmZ8Zi5zvPtU1847A8',
+  CreateTime: '1430199495',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.846413',
+  Longitude: '116.360764',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luL5NxBmZ8Zi5zvPtU1847A8',
+  CreateTime: '1430199544',
+  MsgType: 'event',
+  Event: 'LOCATION',
+  Latitude: '39.846405',
+  Longitude: '116.360832',
+  Precision: '65.000000' }
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luMvlfp2sOgDz_Vc4ezi5Vf4',
+  CreateTime: '1430221157',
+  MsgType: 'text',
+  Content: 'login',
+  MsgId: '6142753095569848673' }
+_http_outgoing.js:386
+    throw new Error('Can\'t render headers after they are sent to the client.'
+          ^
+Error: Can't render headers after they are sent to the client.
+    at ServerResponse.OutgoingMessage._renderHeaders (_http_outgoing.js:386:11)
+    at ServerResponse.res._renderHeaders (/home/baired/www/api-doc-service/node_modules/connect/lib/patch.js:69:27)
+    at ServerResponse.writeHead (_http_server.js:199:20)
+    at ServerResponse.res.writeHead (/home/baired/www/api-doc-service/node_modules/connect/lib/patch.js:75:22)
+    at ServerResponse.res.reply (/home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:184:11)
+    at /home/baired/www/api-doc-service/controllers/wechat_mp.js:60:9
+    at done (/home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:231:9)
+    at /home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:273:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+{ ToUserName: 'gh_78e2262d5204',
+  FromUserName: 'oO34luMvlfp2sOgDz_Vc4ezi5Vf4',
+  CreateTime: '1430270588',
+  MsgType: 'text',
+  Content: 'login',
+  MsgId: '6142965400098283129' }
+_http_outgoing.js:386
+    throw new Error('Can\'t render headers after they are sent to the client.'
+          ^
+Error: Can't render headers after they are sent to the client.
+    at ServerResponse.OutgoingMessage._renderHeaders (_http_outgoing.js:386:11)
+    at ServerResponse.res._renderHeaders (/home/baired/www/api-doc-service/node_modules/connect/lib/patch.js:69:27)
+    at ServerResponse.writeHead (_http_server.js:199:20)
+    at ServerResponse.res.writeHead (/home/baired/www/api-doc-service/node_modules/connect/lib/patch.js:75:22)
+    at ServerResponse.res.reply (/home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:184:11)
+    at /home/baired/www/api-doc-service/controllers/wechat_mp.js:60:9
+    at done (/home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:231:9)
+    at /home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:273:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:55:7
+    at process._tickCallback (node.js:355:11)
+_http_outgoing.js:386
+    throw new Error('Can\'t render headers after they are sent to the client.'
+          ^
+Error: Can't render headers after they are sent to the client.
+    at ServerResponse.OutgoingMessage._renderHeaders (_http_outgoing.js:386:11)
+    at ServerResponse.res._renderHeaders (/home/baired/www/api-doc-service/node_modules/connect/lib/patch.js:69:27)
+    at ServerResponse.writeHead (_http_server.js:199:20)
+    at ServerResponse.res.writeHead (/home/baired/www/api-doc-service/node_modules/connect/lib/patch.js:75:22)
+    at ServerResponse.res.reply (/home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:184:11)
+    at /home/baired/www/api-doc-service/controllers/wechat_mp.js:58:9
+    at done (/home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:231:9)
+    at /home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:273:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:55:7
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:13
+    11| <body>
+    12| <script>
+ >> 13| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    14| </script>
+    15| </body>
+    16| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:522)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:569)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:13
+    11| <body>
+    12| <script>
+ >> 13| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    14| </script>
+    15| </body>
+    16| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:522)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:569)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:13
+    11| <body>
+    12| <script>
+ >> 13| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    14| </script>
+    15| </body>
+    16| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:522)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:569)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:13
+    11| <body>
+    12| <script>
+ >> 13| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    14| </script>
+    15| </body>
+    16| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:522)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:569)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:13
+    11| <body>
+    12| <script>
+ >> 13| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    14| </script>
+    15| </body>
+    16| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:522)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:569)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:13
+    11| <body>
+    12| <script>
+ >> 13| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    14| </script>
+    15| </body>
+    16| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:522)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:569)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:13
+    11| <body>
+    12| <script>
+ >> 13| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    14| </script>
+    15| </body>
+    16| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:522)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:569)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)

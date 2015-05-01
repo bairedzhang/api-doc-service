@@ -9,8 +9,9 @@
   <title>login</title>
 </head>
 <body>
-  <a href="<%-authorizeURL%>">login</a>
+  <script>
+	location.href = '<%-authorizeURL%>';
+  </script>
 
-  <%-authorizeURL%>
 </body>
 </html>

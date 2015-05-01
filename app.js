@@ -18,12 +18,7 @@ app.use(connect.session({secret: config.secret}));
 
 app.use('/wechat/callback', mp.callback);
 app.use('/wechat', mp.reply);
-app.use('/detail', mp.detail);
 app.use('/login', mp.login);
-app.use('/corp', corp(config.corp, function (req, res, next) {
-  res.writeHead(200);
-  res.end('hello node api');
-}));
 
 app.use('/', function (req, res) {
   res.writeHead(200);
@@ -40,6 +35,7 @@ app.use(function (err, req, res) {
   res.end(err.message);
 });
 
+app.listen(80);
 var server = http.createServer(app);
 var worker = require('pm').createWorker();
 worker.ready(function (socket) {
