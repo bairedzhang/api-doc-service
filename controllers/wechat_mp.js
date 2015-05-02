@@ -78,3 +78,9 @@ exports.login = function (req, res) {
   var redirect = config.domain+':8088/html/index.html';
   res.end(loginTpl({authorizeURL: oauth.getAuthorizeURL(redirect, 'state', 'snsapi_userinfo')}));
 };
+exports.static = function(req,res){
+    console.log(req.query);
+    var path =  fs.readFileSync(path.join(VIEW_DIR, 'login.html'), 'utf-8')
+    res.writeHead(200);
+    res.end('111');
+}

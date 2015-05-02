@@ -19,7 +19,7 @@ app.use(connect.session({secret: config.secret}));
 app.use('/wechat/callback', mp.callback);
 app.use('/wechat', mp.reply);
 app.use('/login', mp.login);
-
+app.use('/html/',mp.static);
 app.use('/', function (req, res) {
   res.writeHead(200);
   res.end('hello node api');
