@@ -419,3 +419,237 @@ uid is not defined
     at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
     at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
     at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
+ReferenceError: ejs:14
+    12| <script>
+    13| alert(location.href);
+ >> 14| location.href = 'http://suishisuid.com:8088/html/index.html?uid=<%-uid%>';
+    15| </script>
+    16| </body>
+    17| </html>
+
+uid is not defined
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:545)
+    at eval (eval at <anonymous> (/home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:592)
+    at /home/baired/www/api-doc-service/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.callback [as handle] (/home/baired/www/api-doc-service/controllers/wechat_mp.js:25:11)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/proto.js:190:15)
+    at next (/home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:312:9)
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session.js:336:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:50:9
+    at process._tickCallback (node.js:355:11)
