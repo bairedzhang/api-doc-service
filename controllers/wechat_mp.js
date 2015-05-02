@@ -106,3 +106,31 @@ exports.getUid = function(request,response){
 	});
 	req.end();
 };
+exports.api = function(request,response){
+    var path = request.url;
+    console.log(path);
+	var options = {
+		hostname: '123.57.56.174',
+  		port: 9001,
+  		path: path,
+  		method: 'GET'
+	};
+	console.log(path);
+
+    var req = http.request(options, function(res) {
+			  var data = '';
+			  res.on('data', function (chunk) {
+			  	data +=chunk;
+			  });
+			  res.on('end',function(){
+			  	response.writeHead(res.statusCode,res.headers);
+			  	response.end(data);
+			  });
+	});
+
+	req.on('error', function(e) {
+	  console.log('problem with request: ' + e.message);
+	});
+	req.end();
+
+}
