@@ -1,6 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var https = require('https');
+var http = require('http');
 var wechat = require('wechat');
 var ejs = require('ejs');
 var alpha = require('alpha');
@@ -84,7 +85,7 @@ exports.getUid = function(request,response){
     console.log(code);
     var path = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx585f9aa0138e27ba&secret=41aecb4e7c8e4546b89ac7a95e0bbc73&code='+code+'&grant_type=authorization_code';
 
-    console.log(path); 
+    console.log(path);
     https.get(path, function(res) {
 			  var data = '';
 			  res.on('data', function (chunk) {
