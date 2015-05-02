@@ -51,9 +51,9 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res) {
   if(message.Event === 'subscribe') {
     res.writeHead(200);
     res.reply([{
-      title: 'suishisuidi',
+      title: '随时随递',
       description: 'go',
-      picurl: 'http://suishisuid:8088/static/image/logo.png',
+      picurl: 'http://suishisuid.com:8088/static/image/logo.png',
       url: config.domain + '/wechat/callback?uid='+message.FromUserName
     }]);
 
@@ -62,9 +62,9 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res) {
   }else if (message.EventKey === 'index') {
         var uid = message.FromUserName;
 	 res.reply([{
-	      title: 'suishisuidi',
+	      title: '随时随递',
 	      description: 'go',
-	      picurl: 'http://suishisuid:8088/static/image/logo.png',
+	      picurl: 'http://suishisuid.com:8088/static/image/logo.png',
 	      url: config.domain + '/wechat/callback?uid='+message.FromUserName
 	    }]);
 		return ;
@@ -75,7 +75,6 @@ var loginTpl = ejs.compile(fs.readFileSync(path.join(VIEW_DIR, 'login.html'), 'u
 
 exports.login = function (req, res) {
   res.writeHead(200);
-  var redirect = config.domain+'/wechat/callback';
+  var redirect = config.domain+':8088/html/index.html';
   res.end(loginTpl({authorizeURL: oauth.getAuthorizeURL(redirect, 'state', 'snsapi_userinfo')}));
-// res.redirect(oauth.getAuthorizeURL(redirect, 'state', 'snsapi_userinfo'));
 };
