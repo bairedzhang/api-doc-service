@@ -75,11 +75,11 @@ var loginTpl = ejs.compile(fs.readFileSync(path.join(VIEW_DIR, 'login.html'), 'u
 
 exports.login = function (req, res) {
   res.writeHead(200);
-  var redirect = config.domain+':8088/html/index.html';
-  res.end(loginTpl({authorizeURL: oauth.getAuthorizeURL(redirect, 'state', 'snsapi_userinfo')}));
+  var redirect = config.domain+'/public/html/index.html';
+  res.end(loginTpl({authorizeURL: oauth.getAuthorizeURL(redirect, 'state', 'snsapi_base')}));
 };
 exports.static = function(req,res){
-    console.log(req.query);
+    console.log(req.url);
     res.writeHead(200);
     res.end('111');
 }
