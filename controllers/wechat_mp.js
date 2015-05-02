@@ -79,17 +79,13 @@ exports.login = function (req, res) {
   res.end(loginTpl({authorizeURL: oauth.getAuthorizeURL(redirect, 'state', 'snsapi_base')}));
 };
 exports.getUid = function(request,response){
+    console.log(request.query);
     var code = request.query.code;
     console.log(code);
-    var path = '/sns/oauth2/access_token?appid=wx585f9aa0138e27ba&secret=41aecb4e7c8e4546b89ac7a95e0bbc73&code='+code+'&grant_type=authorization_code';
-	var options = {
-		hostname: 'api.weixin.qq.com',
-  		port: 80,
-  		path: path,
-  		method: 'GET'
-	};
+    var path = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx585f9aa0138e27ba&secret=41aecb4e7c8e4546b89ac7a95e0bbc73&code='+code+'&grant_type=authorization_code';
 
-    var req = https.request(options, function(res) {
+    console.log(path); 
+    https.get(path, function(res) {
 			  var data = '';
 			  res.on('data', function (chunk) {
 			  	data +=chunk;
@@ -97,12 +93,8 @@ exports.getUid = function(request,response){
 			  res.on('end',function(){
 			  	response.writeHead(res.statusCode,res.headers);
                 console.log(data);
+                                console.log(data);
 			  	response.end(data);
 			  });
 	});
-
-	req.on('error', function(e) {
-	  console.log('problem with request: ' + e.message);
-	});
-	req.end();
 };
