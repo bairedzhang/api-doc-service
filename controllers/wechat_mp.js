@@ -80,7 +80,6 @@ exports.login = function (req, res) {
 };
 exports.static = function(req,res){
     console.log(req.query);
-    var path =  fs.readFileSync(path.join(VIEW_DIR, 'login.html'), 'utf-8')
     res.writeHead(200);
     res.end('111');
 }
