@@ -1,6 +1,6 @@
 var fs = require('fs');
 var path = require('path');
-
+var https = require('https');
 var wechat = require('wechat');
 var ejs = require('ejs');
 var alpha = require('alpha');
@@ -78,8 +78,31 @@ exports.login = function (req, res) {
   var redirect = config.domain+'/public/html/index.html';
   res.end(loginTpl({authorizeURL: oauth.getAuthorizeURL(redirect, 'state', 'snsapi_base')}));
 };
-exports.static = function(req,res){
-    console.log(req.url);
-    res.writeHead(200);
-    res.end('111');
-}
+exports.getUid = function(request,response){
+    var code = request.query.code;
+    console.log(code);
+    var path = '/sns/oauth2/access_token?appid=wx585f9aa0138e27ba&secret=41aecb4e7c8e4546b89ac7a95e0bbc73&code='+code+'&grant_type=authorization_code';
+	var options = {
+		hostname: 'api.weixin.qq.com',
+  		port: 80,
+  		path: path,
+  		method: 'GET'
+	};
+
+    var req = https.request(options, function(res) {
+			  var data = '';
+			  res.on('data', function (chunk) {
+			  	data +=chunk;
+			  });
+			  res.on('end',function(){
+			  	response.writeHead(res.statusCode,res.headers);
+                console.log(data);
+			  	response.end(data);
+			  });
+	});
+
+	req.on('error', function(e) {
+	  console.log('problem with request: ' + e.message);
+	});
+	req.end();
+};
