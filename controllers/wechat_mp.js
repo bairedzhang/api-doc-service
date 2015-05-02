@@ -100,7 +100,7 @@ exports.getUid = function(request,response){
 	});
 };
 exports.api = function(request,response){
-    var path = request.url;
+    var path = '/api'+request.url;
     console.log(path);
 	var options = {
 		hostname: '123.57.56.174',
