@@ -2,6 +2,7 @@ var fs = require('fs');
 var path = require('path');
 var https = require('https');
 var http = require('http');
+var app = require('connect')();
 var wechat = require('wechat');
 var ejs = require('ejs');
 var alpha = require('alpha');
@@ -10,6 +11,14 @@ var VIEW_DIR = path.join(__dirname, '..', 'views');
 var config = require('../config');
 
 var oauth = new wechat.OAuth(config.appid, config.appsecret);
+var Payment = require('wechat-pay').Payment;
+var initConfig = {
+     partnerKey: "<partnerkey>",
+     appId: "wx585f9aa0138e27ba",
+     mchId: "1236346402",
+     notifyUrl: "/wechat/getPayState"
+};
+var payment = new Payment(initConfig);
 
 var List = require('wechat').List;
 List.add('view', [
@@ -71,7 +80,40 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res) {
 		return ;
   }
 }));
+exports.payment = function(req,res){
+    var order = {
+        body: req.query.body,
+        out_trade_no: 'kfc' + (+new Date),
+        total_fee: req.query.total,
+        spbill_create_ip: req.ip,
+        openid: req.query.openid,
+        trade_type: 'JSAPI'
+    };
 
+    payment.getBrandWCPayRequestParams(order, function(err, payargs){
+        res.json(payargs);
+    });
+}
+var middleware = require('wechat-pay').middleware;
+app.use('/wechat/getPayState', middleware(initConfig).getNotify().done(function(message, req, res, next) {
+    var openid = message.openid;
+    var order_id = message.out_trade_no;
+    var attach = {};
+        try{
+             attach = JSON.parse(message.attach);
+            }catch(e){}
+
+            /**
+             ** 查询订单，在自己系统里把订单标为已处理
+             ** 如果订单之前已经处理过了直接返回成功
+             **/
+            res.reply('success');
+
+              /**
+               ** 有错误返回错误，不然微信会在一段时间里以一定频次请求你
+               ** res.reply(new Error('...'))
+               **/
+}));
 var loginTpl = ejs.compile(fs.readFileSync(path.join(VIEW_DIR, 'login.html'), 'utf-8'));
 
 exports.login = function (req, res) {
