@@ -121,7 +121,7 @@ var appinfo = require('../config');
 
 
    function getSignature(req, res) {
-    var _url = req.body.url;
+    var _url = req.query.url;
     var signatureObj = cachedSignatures[_url];
 
     if(!_url){
