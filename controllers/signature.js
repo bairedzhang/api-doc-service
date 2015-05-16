@@ -88,7 +88,7 @@ var appinfo = require('../config');
               return errorRender(res, '解析远程JSON数据错误', str);
         }
 
-        var appid = config.appid;
+        var appid = appinfo.appid;
         var ts = createTimeStamp();
         var nonceStr = createNonceStr();
         var ticket = resp.ticket;
