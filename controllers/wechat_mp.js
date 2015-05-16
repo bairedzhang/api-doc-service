@@ -6,6 +6,7 @@ var app = require('connect')();
 var wechat = require('wechat');
 var ejs = require('ejs');
 var alpha = require('alpha');
+var signature = require('./signature');
 var VIEW_DIR = path.join(__dirname, '..', 'views');
 
 var config = require('../config');
@@ -35,6 +36,7 @@ exports.callback = function (req, res) {
   res.end(callbackTpl(req.query));
 };
 
+exports.signature = signature;
 exports.reply = wechat(config.mp, wechat.text(function (message, req, res) {
   var input = (message.Content || '').trim();
 

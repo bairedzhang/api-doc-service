@@ -13,6 +13,7 @@
   "dependencies": {
     "alpha": "0.0.8",
     "connect": "2.8.4",
+    "jssha": "*",
     "pm": "*",
     "wechat": "1.0.1",
     "wechat-enterprise": "0.0.5",

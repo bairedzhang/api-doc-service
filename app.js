@@ -18,6 +18,7 @@ app.use(connect.session({secret: config.secret}));
 
 app.use('/wechat/callback', mp.callback);
 app.use('/wechat/userid',mp.getUid);
+app.use('/wechat/signature',mp.signature);
 app.use('/wechat', mp.reply);
 app.use('/api', mp.api);
 app.use('/wechat/payment',mp.payment);
