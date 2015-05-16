@@ -14,7 +14,6 @@ var config = require('../config');
 var oauth = new wechat.OAuth(config.appid, config.appsecret);
 var Payment = require('wechat-pay').Payment;
 var initConfig = {
-     partnerKey: "<partnerkey>",
      appId: "wx585f9aa0138e27ba",
      mchId: "1236346402",
      notifyUrl: "/wechat/getPayState"
@@ -87,12 +86,17 @@ exports.payment = function(req,res){
         body: req.query.body,
         out_trade_no: 'kfc' + (+new Date),
         total_fee: req.query.total,
-        spbill_create_ip: req.ip,
+        spbill_create_ip:req.connection.remoteAddress,
         openid: req.query.openid,
         trade_type: 'JSAPI'
     };
+    console.log(req.connection.remoteAddress);
 
     payment.getBrandWCPayRequestParams(order, function(err, payargs){
+        console.log(err);
+        if(err){
+	 return;
+        }
         res.json(payargs);
     });
 }

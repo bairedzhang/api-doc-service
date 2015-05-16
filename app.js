@@ -18,10 +18,10 @@ app.use(connect.session({secret: config.secret}));
 
 app.use('/wechat/callback', mp.callback);
 app.use('/wechat/userid',mp.getUid);
+app.use('/wechat/payment',mp.payment);
 app.use('/wechat/signature',mp.signature);
 app.use('/wechat', mp.reply);
 app.use('/api', mp.api);
-app.use('/wechat/payment',mp.payment);
 app.use('/login', mp.login);
 app.use('/public',connect.static(__dirname+'/../../repo/deliver/dist/'));
 app.use('/static',connect.static(__dirname+'/../../repo/deliver/dist/static/'));
