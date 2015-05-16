@@ -12,12 +12,6 @@ var appinfo = require('../config');
 
   // 输出数字签名对象
   var responseWithJson = function (res, data) {
-    // 允许跨域异步获取
-    res.set({
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "POST,GET",
-      "Access-Control-Allow-Credentials": "true"
-    });
     res.json(data);
   };
 
