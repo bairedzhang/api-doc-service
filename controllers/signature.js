@@ -12,6 +12,7 @@ var appinfo = require('../config');
 
   // 输出数字签名对象
   var responseWithJson = function (res, data) {
+    data.appid = appinfo.appid;
     res.writeHead(200,{
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "POST,GET",
