@@ -12,7 +12,12 @@ var appinfo = require('../config');
 
   // 输出数字签名对象
   var responseWithJson = function (res, data) {
-    res.json(data);
+    res.writeHead(200,{
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST,GET",
+      "Access-Control-Allow-Credentials": "true"
+    });
+    res.end(JSON.stringify(data));
   };
 
   // 随机字符串产生函数
@@ -30,11 +35,6 @@ var appinfo = require('../config');
       console.log(data);
       console.log('---------');
     }
-    res.set({
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "POST,GET",
-      "Access-Control-Allow-Credentials": "true"
-    });
     responseWithJson(res, {errmsg: 'error', message: info, data: data});
   };
 
