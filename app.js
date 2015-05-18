@@ -20,6 +20,7 @@ app.use('/wechat/callback', mp.callback);
 app.use('/wechat/userid',mp.getUid);
 app.use('/wechat/payment',mp.payment);
 app.use('/wechat/signature',mp.signature);
+app.use('/wechat/getfulluserinfo',mp.getFullUserInfo);
 app.use('/wechat', mp.reply);
 app.use('/api', mp.api);
 app.use('/login', mp.login);

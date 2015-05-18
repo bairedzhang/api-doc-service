@@ -27,6 +27,20 @@ List.add('view', [
   }]
 ]);
 
+var getAccessToken = function(code,cb){
+    var path = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx585f9aa0138e27ba&secret=41aecb4e7c8e4546b89ac7a95e0bbc73&code='+code+'&grant_type=authorization_code';
+
+    https.get(path, function(res) {
+        var data = '';
+        res.on('data', function (chunk) {
+          data +=chunk;
+        });
+        res.on('end',function(){
+          cb(data,res);
+        });
+  });
+
+}
 
 var callbackTpl = ejs.compile(fs.readFileSync(path.join(VIEW_DIR, 'callback.html'), 'utf-8'));
 
@@ -72,13 +86,13 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res) {
 
   }else if (message.EventKey === 'index') {
         var uid = message.FromUserName;
-	 res.reply([{
-	      title: '随时随递',
-	      description: 'go',
-	      picurl: 'http://suishisuid.com:8088/static/image/logo.png',
-	      url: config.domain + '/wechat/callback?uid='+message.FromUserName
-	    }]);
-		return ;
+   res.reply([{
+        title: '随时随递',
+        description: 'go',
+        picurl: 'http://suishisuid.com:8088/static/image/logo.png',
+        url: config.domain + '/wechat/callback?uid='+message.FromUserName
+      }]);
+    return ;
   }
 }));
 exports.payment = function(req,res){
@@ -95,7 +109,7 @@ exports.payment = function(req,res){
     payment.getBrandWCPayRequestParams(order, function(err, payargs){
         console.log(err);
         if(err){
-	 return;
+   return;
         }
         res.json(payargs);
     });
@@ -128,50 +142,56 @@ exports.login = function (req, res) {
   res.end(loginTpl({authorizeURL: oauth.getAuthorizeURL(redirect, 'state', 'snsapi_base')}));
 };
 exports.getUid = function(request,response){
-    console.log(request.query);
     var code = request.query.code;
-    console.log(code);
-    var path = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx585f9aa0138e27ba&secret=41aecb4e7c8e4546b89ac7a95e0bbc73&code='+code+'&grant_type=authorization_code';
-
-    console.log(path);
-    https.get(path, function(res) {
-			  var data = '';
-			  res.on('data', function (chunk) {
-			  	data +=chunk;
-			  });
-			  res.on('end',function(){
-			  	response.writeHead(res.statusCode,res.headers);
-                console.log(data);
-                                console.log(data);
-			  	response.end(data);
-			  });
-	});
+    getAccessToken(code,function(data,res){
+          response.writeHead(res.statusCode,res.headers);
+          response.end(data);
+    });
 };
+exports.getFullUserInfo= function(request,response){
+    var code = request.query.code;
+    getAccessToken(code,function(data){
+       data = JSON.parse(data);
+       var api = 'https://api.weixin.qq.com/sns/userinfo?access_token='+data.access_token+'&openid='+data.openid+'&lang=zh_CN';
+       https.get(api,function(res){
+            var data = '';
+            res.on('data', function (chunk) {
+              data +=chunk;
+            });
+
+            res.on('end',function(){
+              response.writeHead(res.statusCode,res.headers);
+              response.end(data);
+            });
+       });
+    });
+};
+
 exports.api = function(request,response){
     var path = '/api'+request.url;
     console.log(path);
-	var options = {
-		hostname: '123.57.56.174',
-  		port: 9001,
-  		path: path,
-  		method: 'GET'
-	};
-	console.log(path);
+  var options = {
+    hostname: '123.57.56.174',
+      port: 9001,
+      path: path,
+      method: 'GET'
+  };
+  console.log(path);
 
     var req = http.request(options, function(res) {
-			  var data = '';
-			  res.on('data', function (chunk) {
-			  	data +=chunk;
-			  });
-			  res.on('end',function(){
-			  	response.writeHead(res.statusCode,res.headers);
-			  	response.end(data);
-			  });
-	});
+        var data = '';
+        res.on('data', function (chunk) {
+          data +=chunk;
+        });
+        res.on('end',function(){
+          response.writeHead(res.statusCode,res.headers);
+          response.end(data);
+        });
+  });
 
-	req.on('error', function(e) {
-	  console.log('problem with request: ' + e.message);
-	});
-	req.end();
+  req.on('error', function(e) {
+    console.log('problem with request: ' + e.message);
+  });
+  req.end();
 
 }
