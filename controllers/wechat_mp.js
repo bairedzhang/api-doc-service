@@ -73,6 +73,7 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res) {
 }).link(function (message, req, res) {
   res.reply('点连接进来的是吧！');
 }).event(function (message, req, res) {
+  console.log(message);
   if(message.Event === 'subscribe') {
     res.writeHead(200);
     res.reply([{
@@ -94,7 +95,7 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res) {
       }]);
     return ;
   }else if (message.EventKey === 'guide') {
-     res.reply('服务介绍');
+     res.reply(config.guideTxt);
   }
 }));
 exports.payment = function(req,res){
