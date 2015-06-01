@@ -93,6 +93,8 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res) {
         url: config.domain + '/wechat/callback?uid='+message.FromUserName
       }]);
     return ;
+  }else if (message.EventKey === 'guide') {
+     res.reply('服务介绍');
   }
 }));
 exports.payment = function(req,res){
