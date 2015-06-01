@@ -96,7 +96,10 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res) {
     return ;
   }else if (message.EventKey === 'guide') {
      res.reply(config.guideTxt);
+  }else if (message.EventKey === 'refund') {
+     res.reply(13601070912);
   }
+
 }));
 exports.payment = function(req,res){
     var order = {
