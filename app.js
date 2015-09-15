@@ -26,6 +26,7 @@ app.use('/api', mp.api);
 app.use('/login', mp.login);
 app.use('/public',connect.static(__dirname+'/../../repo/deliver/dist/'));
 app.use('/static',connect.static(__dirname+'/../../repo/deliver/dist/static/'));
+app.use('/',mp.index);
 app.use('/', function (req, res) {
   res.writeHead(200);
   res.end('hello node api');

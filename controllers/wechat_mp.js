@@ -8,6 +8,7 @@ var ejs = require('ejs');
 var alpha = require('alpha');
 var signature = require('./signature');
 var VIEW_DIR = path.join(__dirname, '..', 'views');
+var INDEX_DIR = __dirname+'/../../../repo/hapei/public/index.html';
 
 var config = require('../config');
 
@@ -43,7 +44,12 @@ var getAccessToken = function(code,cb){
 }
 
 var callbackTpl = ejs.compile(fs.readFileSync(path.join(VIEW_DIR, 'callback.html'), 'utf-8'));
+var indexTpl = ejs.compile(fs.readFileSync(INDEX_DIR, 'utf-8'));
 
+exports.index = function(req,res){
+  res.writeHead(200);
+  res.end(indexTpl(req.query));
+}
 exports.callback = function (req, res) {
   res.writeHead(200);
   res.end(callbackTpl(req.query));
