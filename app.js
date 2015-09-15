@@ -4,6 +4,7 @@ var connect = require('connect');
 var config = require('./config');
 var mp = require('./controllers/wechat_mp');
 var corp = require('wechat-enterprise');
+var INDEX_DIR = __dirname+'/../../repo/hapei/public/index.html';
 
 var app = connect();
 connect.logger.format('home', ':remote-addr :response-time - [:date] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent" :res[content-length]');
@@ -26,10 +27,13 @@ app.use('/api', mp.api);
 app.use('/login', mp.login);
 app.use('/public',connect.static(__dirname+'/../../repo/deliver/dist/'));
 app.use('/static',connect.static(__dirname+'/../../repo/deliver/dist/static/'));
-app.use('/',mp.index);
 app.use('/', function (req, res) {
   res.writeHead(200);
-  res.end('hello node api');
+  if(req.url == '/'){
+    res.end(fs.readFileSync(INDEX_DIR, 'utf-8'))
+  }else {
+    res.end('hello node api');
+  }
 });
 
 /**
