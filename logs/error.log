@@ -1,0 +1,14 @@
+_http_outgoing.js:386
+    throw new Error('Can\'t render headers after they are sent to the client.'
+          ^
+Error: Can't render headers after they are sent to the client.
+    at ServerResponse.OutgoingMessage._renderHeaders (_http_outgoing.js:386:11)
+    at ServerResponse.res._renderHeaders (/home/baired/www/api-doc-service/node_modules/connect/lib/patch.js:69:27)
+    at ServerResponse.writeHead (_http_server.js:199:20)
+    at ServerResponse.res.writeHead (/home/baired/www/api-doc-service/node_modules/connect/lib/patch.js:75:22)
+    at ServerResponse.res.reply (/home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:184:11)
+    at /home/baired/www/api-doc-service/controllers/wechat_mp.js:54:9
+    at done (/home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:231:9)
+    at /home/baired/www/api-doc-service/node_modules/wechat/lib/wechat.js:273:9
+    at /home/baired/www/api-doc-service/node_modules/connect/lib/middleware/session/memory.js:55:7
+    at process._tickCallback (node.js:355:11)

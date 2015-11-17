@@ -27,13 +27,12 @@ app.use('/api', mp.api);
 app.use('/login', mp.login);
 app.use('/public',connect.static(__dirname+'/../../repo/deliver/dist/'));
 app.use('/static',connect.static(__dirname+'/../../repo/deliver/dist/static/'));
+app.use('/img',connect.static(__dirname+'/../../repo/hapei/public/img/'));
+app.use('/js',connect.static(__dirname+'/../../repo/hapei/public/js/'));
 app.use('/', function (req, res) {
   res.writeHead(200);
-  if(req.url == '/'){
-    res.end(fs.readFileSync(INDEX_DIR, 'utf-8'))
-  }else {
-    res.end('hello node api');
-  }
+//  res.end('ssss');
+  res.end(fs.readFileSync(INDEX_DIR, 'utf-8'))
 });
 
 /**
@@ -46,7 +45,7 @@ app.use(function (err, req, res) {
   res.end(err.message);
 });
 
-app.listen(80);
+app.listen(3000);
 var server = http.createServer(app);
 var worker = require('pm').createWorker();
 worker.ready(function (socket) {
